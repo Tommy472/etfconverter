@@ -93,8 +93,5 @@ const CryptoETFConverter = () => {
   );
 };
 
-// Render the app
-ReactDOM.render(
-  <CryptoETFConverter />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CryptoETFConverter />);
