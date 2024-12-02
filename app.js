@@ -5,7 +5,7 @@ const CryptoETFConverter = () => {
   const [gbtcValue, setGbtcValue] = useState('');
   const [ethValue, setEthValue] = useState('');
   const [etheValue, setEtheValue] = useState('');
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);  // Changed to true for default dark mode
 
   const ETH_RATIO = 0.008435;
   const BTC_RATIO = 0.0007968;
@@ -34,7 +34,7 @@ const CryptoETFConverter = () => {
     <div className={`flex flex-col items-center justify-center min-h-screen p-4 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white'}`}>
       <div className={`w-full max-w-md p-6 rounded-xl shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-gray-100'}`}>
         <div className="flex justify-between items-center mb-6">
-          <h2 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-800'}`}>Crypto Converter</h2>
+          <h2 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-800'}`}>Crypto ETF Converter</h2>
           <button 
             onClick={() => setDarkMode(!darkMode)}
             className={`px-3 py-1 rounded-full text-sm ${darkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}
